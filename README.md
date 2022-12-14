@@ -1,2 +1,2 @@
-# SnakeAI
-SnakeAI in python
+# Snake
+Snake in python
