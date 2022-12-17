@@ -7,10 +7,10 @@ from tkinter import *
 import random
 
 # CONSTANTS
-GAME_WIDTH = 1000
-GAME_HEIGHT = 800
-SPEED = 50
-SPACE_SIZE = 25
+GAME_WIDTH = 500
+GAME_HEIGHT = 500
+SPEED = 150
+SPACE_SIZE = 50
 BODY_PARTS = 3
 SNAKE_COLOR = "#00CCCC"
 FOOD_COLOR = "#FF0000"
@@ -65,7 +65,18 @@ def nextTurn(snake, food):
         label.config(text="Score : {}".format(score))
     
         canvas.delete("food")
+    
         food = Food()
+
+        # foodOk = False
+
+        # while not foodOk:
+        #     food = Food()
+        #     for body_part in snake.coordinates:
+        #         if food.coordinates[0] == body_part[0] and food.coordinates[1] == body_part[1]:
+        #             canvas.delete("food")
+        #     if food!=None:
+        #         foodOk=True
 
     else:
 
